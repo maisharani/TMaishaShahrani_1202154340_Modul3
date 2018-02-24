@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andro.maisha.tmaishashahrani_1202154340_modul3.DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sportsImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sportsImageDetail"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/title_placeholder"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/newsTitleDetail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sportsImageDetail"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/news_label"
+            android:textColor="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/subTitleDetail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitleDetail"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/filler_text" />
+
+        <ImageView
+            android:id="@+id/BaterryView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/subTitleDetail"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/listlevel" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/BaterryView"
+            android:layout_toStartOf="@+id/BaterryView"
+            android:onClick="Increase"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:onClick="Decrease"
+            android:text="-" />
+
+    </RelativeLayout>
+</ScrollView>
